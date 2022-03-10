@@ -15,6 +15,8 @@
 An app that you can use to write, save, and delete notes, using a database feature for data persistence.
 ## Version
 1.0.0. Very simple start. Simple is best so maybe this is it.
+## Deployment
+https://cj-note-taker.herokuapp.com/
 ## Languages
  JavaScript, HTML, CSS, ES6, jQuery, Node
 ## Installation
