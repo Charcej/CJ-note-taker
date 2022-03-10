@@ -49,7 +49,7 @@ var renderActiveNote = function () {
   }
 };
 
-// Get the note data from the inputs, save it to the db and update the view
+// gets and saves and updates notes
 var handleNoteSave = function () {
   var newNote = {
     title: $noteTitle.val(),
@@ -62,9 +62,8 @@ var handleNoteSave = function () {
   });
 };
 
-// Delete the clicked note
+// deletes when clicked with safety mechanism
 var handleNoteDelete = function (event) {
-  // prevents the click listener for the list from being called when the button inside of it is clicked
   event.stopPropagation();
 
   var note = $(this)
