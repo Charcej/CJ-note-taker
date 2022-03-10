@@ -80,20 +80,19 @@ var handleNoteDelete = function (event) {
   });
 };
 
-// Sets the activeNote and displays it
+// sets and displays activenote stuff
 var handleNoteView = function () {
   activeNote = $(this).data();
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// sets to empty with option of adding new
 var handleNewNoteView = function () {
   activeNote = {};
   renderActiveNote();
 };
 
-// If a note's title or text are empty, hide the save button
-// Or else show it
+// hides / displays the save icon
 var handleRenderSaveBtn = function () {
   if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
     $saveNoteBtn.hide();
@@ -102,7 +101,7 @@ var handleRenderSaveBtn = function () {
   }
 };
 
-// Render's the list of note titles
+// note title rendering
 var renderNoteList = function (notes) {
   $noteList.empty();
 
