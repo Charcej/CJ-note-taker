@@ -1,0 +1,6 @@
+{
+    "name": "Note Taker",
+    "description": "Note Taking Application",
+    "repository": "https://github.com/Charcej/CJ-note-taker",
+    "keywords": ["node", "express", "notes"]
+}
