@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const database = require("./db/db")
 
-// Express app stuff
+// express app stuff
 var app = express();
 var PORT = process.env.PORT || 3000;
 
@@ -74,7 +74,7 @@ app.delete("/api/notes/:id", function (req, res) {
     res.json(database);
 });
 
-// Listener
+// listener
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
